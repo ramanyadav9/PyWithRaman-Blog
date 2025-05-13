@@ -1,0 +1,122 @@
+[
+  {
+    "title": "My Updated Post",
+    "content": "Just updated my first post! I'm really excited to start sharing what I learn about coding and web development. Stay tuned!",
+    "user_id": 1
+  },
+  {
+    "title": "A Second Post",
+    "content": "This is my second post and I'm enjoying the process so far. Let's see how far this journey goes!",
+    "user_id": 2
+  },
+  {
+    "title": "Top 5 Programming Lanaguages",
+    "content": "Here are my top 5 programming languages in 2025:\n1. Python\n2. JavaScript\n3. Rust\n4. Go\n5. TypeScript\n\nThese choices are based on demand, community support, and future growth potential.",
+    "user_id": 3
+  },
+  {
+    "title": "Sublime Text Tips and Tricks",
+    "content": "Sublime Text is lightweight but powerful. Here are a few tricks:\n- Use multi-cursor editing (Ctrl + D)\n- Install Package Control for easy plugins\n- Use Goto Anything (Ctrl + P) to navigate fast\n\nThese tips can improve your workflow significantly.",
+    "user_id": 1
+  },
+  {
+    "title": "Best Python IDEs",
+    "content": "Looking for a great Python IDE? Try these:\n- PyCharm (full-featured)\n- VS Code (lightweight and extensible)\n- Thonny (great for beginners)\n\nEach has its strengths, so choose what suits your needs best.",
+    "user_id": 2
+  },
+  {
+    "title": "Flask vs Django - Which Is Better?",
+    "content": "Flask is ideal for lightweight, flexible applications. Django is great for bigger, full-stack apps. If you're just starting, go with Flask. For larger, enterprise-grade projects, Django shines.",
+    "user_id": 3
+  },
+  {
+    "title": "You Won't Believe These Clickbait Titles!",
+    "content": "Clickbait titles can draw in readers, but they can backfire. Instead, try writing catchy yet honest headlines that promise value and deliver on it.",
+    "user_id": 4
+  },
+  {
+    "title": "These Beers Will Improve Your Programming",
+    "content": "Okay, beers might not literally make you code better—but taking breaks and relaxing can boost productivity. So, if it's your thing, grab a craft beer and enjoy a coding session.",
+    "user_id": 5
+  },
+  {
+    "title": "List of PyCon 2018 Talks",
+    "content": "Even though PyCon 2018 was years ago, it featured some amazing talks:\n- Building Data Pipelines with Airflow\n- Async Python in the Real World\n- Machine Learning on a Budget\n\nCheck them out on YouTube!",
+    "user_id": 6
+  },
+  {
+    "title": "How Dogs in the Workplace Boosts Productivity",
+    "content": "Studies show having dogs around can reduce stress and promote collaboration. Pet-friendly workplaces are becoming more common—and for good reason!",
+    "user_id": 1
+  },
+  {
+    "title": "The Best Programming Podcasts",
+    "content": "Some great programming podcasts:\n- Software Engineering Daily\n- CodeNewbie\n- Talk Python to Me\n- Changelog\n\nListen during commutes or breaks to stay updated and inspired.",
+    "user_id": 2
+  },
+  {
+    "title": "Tips for Public Speaking",
+    "content": "Public speaking tip: Know your audience, practice ahead, and speak clearly. Use stories to connect emotionally and avoid reading slides word-for-word.",
+    "user_id": 3
+  },
+  {
+    "title": "Best Programmers Throughout History",
+    "content": "From Ada Lovelace to Linus Torvalds, many great minds have shaped programming. Their contributions laid the foundation for modern computing.",
+    "user_id": 4
+  },
+  {
+    "title": "How To Create A YouTube Channel",
+    "content": "Creating a YouTube channel is easy:\n1. Sign in to YouTube.\n2. Click your profile and choose 'Create a channel.'\n3. Customize your branding and upload content regularly!",
+    "user_id": 5
+  },
+  {
+    "title": "How I Record My Videos",
+    "content": "I use OBS Studio for recording, a good microphone, and natural lighting. I also script out what I’ll say and edit using DaVinci Resolve or Adobe Premiere.",
+    "user_id": 6
+  },
+  {
+    "title": "Python and Physics",
+    "content": "Python is excellent for simulations and data analysis in physics. Libraries like NumPy, SciPy, and Matplotlib make it easy to work with scientific data.",
+    "user_id": 1
+  },
+  {
+    "title": "Just A Few More Healines Should Do It",
+    "content": "Headlines are crucial. A strong headline can make the difference between a click and a pass. Focus on clarity, curiosity, and value.",
+    "user_id": 2
+  },
+  {
+    "title": "Music To Listen To While Coding",
+    "content": "Try ambient, instrumental, or lo-fi playlists while coding. Avoid lyrics if you’re writing—instrumentals help maintain flow and focus.",
+    "user_id": 3
+  },
+  {
+    "title": "5 Tips for Writing Catchy Headlines",
+    "content": "1. Use numbers\n2. Ask questions\n3. Include powerful adjectives\n4. Promise value\n5. Keep it short\n\nHeadlines are your first impression—make them count!",
+    "user_id": 4
+  },
+  {
+    "title": "The Rise of Data Science",
+    "content": "Data science is transforming industries. With tools like Python, R, and SQL, companies are making smarter decisions using data-driven insights.",
+    "user_id": 5
+  },
+  {
+    "title": "Best Videos For Learning Python",
+    "content": "Some great channels to learn Python:\n- Corey Schafer\n- Tech With Tim\n- Programming with Mosh\n\nWatch, code along, and practice!",
+    "user_id": 6
+  },
+  {
+    "title": "Top 10 Python Tips and Tricks",
+    "content": "Here are 10 quick Python tips:\n- Use list comprehensions\n- Use zip() for parallel iteration\n- Leverage generators\n- Use enumerate()\n- Use unpacking\n\nThese can save time and make your code cleaner!",
+    "user_id": 1
+  },
+  {
+    "title": "Top 5 YouTube Channels For Learning Programming",
+    "content": "My favorite YouTube channels for learning programming:\n1. Traversy Media\n2. The Net Ninja\n3. CS Dojo\n4. FreeCodeCamp\n5. Programming with Mosh",
+    "user_id": 2
+  },
+  {
+    "title": "My Latest Updated Post",
+    "content": "Just gave this post a fresh update! I’ve been diving deep into full-stack development and can’t wait to share more insights soon.",
+    "user_id": 3
+  }
+]
