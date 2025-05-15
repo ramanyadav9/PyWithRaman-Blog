@@ -1,0 +1,67 @@
+.auth-section {
+  background-color: #FFDBDB;
+  max-width: 480px;
+  margin: auto;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(100, 74, 7, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.auth-section legend {
+  font-size: 1.8rem;
+  color: #644A07;
+  font-weight: 600;
+  border-bottom: none;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-section .form-control {
+  background-color: #FFC6C6;
+  border: none;
+  color: #644A07;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.auth-section .form-control:focus {
+  background-color: #FFDBDB;
+  box-shadow: 0 0 0 3px rgba(89, 65, 0, 0.3);
+}
+
+.auth-btn {
+  background-color: #644A07;
+  color: #FFDBDB;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 25px;
+  font-weight: 500;
+  width: 100%;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-btn:hover {
+  background-color: #594100;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.auth-links a {
+  color: #644A07;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+  color: #ffffff;
+}
