@@ -1,0 +1,100 @@
+.hero-section {
+ 
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.hero-section .lead {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #444;
+}
+
+
+
+.features{
+  background-color: #fee9e9;
+}
+
+
+
+
+.card-body {
+  padding: 1rem;
+  background-color: #FFC6C6;
+  border-radius: 10%;
+ 
+}
+
+
+.load-more-btn {
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: #FFC6C6;
+  color: #333;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.load-more-btn:hover {
+  background-color: #ffadad;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 198, 198, 0.5);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+.form_area {
+  /* background: #f8f9fa; */
+  border-radius: 10px;
+}
+
+.form_style {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Contactme-form-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.raman-card {
+  /* background: #f8f9fa; */
+  border-radius: 10px;
+}
+
+.raman-info {
+  font-size: 0.95rem;
+}
+
+.raman-share a {
+  text-decoration: none;
+}
+
+.resume-btn {
+  padding: 6px 20px;
+  border-radius: 25px;
+}
+
+
+
+
+
+

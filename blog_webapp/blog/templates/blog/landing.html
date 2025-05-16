@@ -1,0 +1,114 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block main_layout %}
+<div class="container mt-5">
+
+ <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to PyWithRaman Blog</h1>
+      <p class="lead">Explore tutorials, coding tips, and Python insights!</p>
+    </div>
+  </section>
+
+  
+
+  <!-- Recent Blog Posts -->
+  <section class="features py-5">
+    <div class="container">
+      <h3 class="mb-4 text-center">Latest Posts</h3>
+      <div class="row">
+        {% for post in recent_posts %}
+        <div class="col-md-4 mb-4">
+          <div class="card post-card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text text-muted">{{ post.content|truncatewords:25 }}</p>
+              <a href="{% url 'post-detail' post.id %}" class="btn btn-sm btn-outline-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="text-center mt-4">
+        <a href="{% url 'blog-home' %}" class="btn  load-more-btn">Load More Posts</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">About PyWithRaman</h2>
+      <p class="text-muted w-75 mx-auto">
+        PyWithRaman is your go-to resource for Python development, real-world projects, and tips for aspiring software engineers.
+        Learn by building, and keep up with the latest trends in development.
+      </p>
+    </div>
+  </section>
+
+
+
+<!-- Contact Section -->
+<section class="Contactme-form py-5  border-top" id="Contactme-form">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-md-6 mb-4">
+        <div class="p-0">
+          <p class="Contactme-form-title h4 mb-4 font-weight-bold text-dark">CONTACT ME!</p>
+          <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <label class="contact_sub_title" for="name">Name</label>
+              <input placeholder="Enter your full name" class="form-control form_style" type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label class="contact_sub_title" for="email">Email</label>
+              <input placeholder="Enter your email" id="email" class="form-control form_style" type="email" required>
+            </div>
+            <div class="form-group">
+              <label class="contact_sub_title" for="message">Message</label>
+              <textarea placeholder="Enter your message" id="message" rows="5" class="form-control form_style" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark mt-2">SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- About Card -->
+      <div class="col-md-6 mb-4">
+        <div class="raman-card p-4 shadow-sm text-center">
+          <div class="raman-img mb-3" style="width:100px; height:100px; border-radius:50%; background-color:#ccc; margin:auto;"></div>
+          <h5 class="font-weight-bold">About Me</h5>
+          <p class="raman-info text-muted">
+            I am Raman Yadav currently pursuing a B.Tech in Computer Science with a strong interest in Python development, web development, machine learning, automation, and cloud technologies.
+          </p>
+          <a href="#" class="btn btn-dark resume-btn mt-2">Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 PyWithRaman. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+<div class="sidebar-container">
+
+  <!-- Search -->
+  <div class="sidebar-search mb-4">
+    {% comment %} <form method="GET" action="{% url 'blog-search' %}"> {% endcomment %}
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search..." name="q">
+        <div class="input-group-append">
+          <button class="btn btn-dark" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="sidebar-section mb-4">
+    <h5 class="sidebar-title">Quick Links</h5>
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#">Latest Posts</a></li>
+      <li class="list-group-item"><a href="#">Announcements</a></li>
+      <li class="list-group-item"><a href="#">Calendars</a></li>
+      <li class="list-group-item"><a href="#">Tips & Tricks</a></li>
+    </ul>
+  </div>
+
+  <!-- Social Links -->
+  <div class="sidebar-section mb-4">
+    <h5 class="sidebar-title">Follow Us</h5>
+    <div class="sidebar-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+
+  <!-- Footer-style note -->
+  <div class="sidebar-footer mt-4 text-muted text-center">
+    <small>© 2025 PyWithRaman</small>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+.sidebar-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 2px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul.list-group {
+  border: none;
+  padding-left: 0;
+}
+
+.sidebar-section .list-group-item {
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background: transparent;
+}
+
+.sidebar-section .list-group-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-icons a {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.sidebar-icons a:hover {
+  color: #007bff;
+}
+
+.sidebar-search .form-control {
+  border-radius: 0.25rem;
+}
+
+.sidebar-footer small {
+  font-size: 12px;
+}

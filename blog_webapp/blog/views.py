@@ -12,6 +12,21 @@ from django.views.generic import (
 from .models import Post
 
 
+def landing_page(request):
+    recent_posts = Post.objects.order_by('-date_posted')[:6]
+    return render(request, 'blog/landing.html', {'recent_posts': recent_posts})
+
+
+# # In views.py
+# context = {
+#   'total_users': User.objects.count(),
+#   'total_posts': Post.objects.count(),
+#   'featured_posts': Post.objects.order_by('-date_posted')[:6],
+# }
+
+
+
+
 def home(request):
     context = {
         'posts': Post.objects.all()
@@ -19,7 +34,7 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
-class PostListView(ListView):
+class PostListView(LoginRequiredMixin, ListView):
     model = Post
     template_name = 'blog/home.html'  # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
