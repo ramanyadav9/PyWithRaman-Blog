@@ -1,4 +1,7 @@
 {% load static %}
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -52,7 +55,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-           <a class="btn nav-btn-golden mx-1" href="{% url 'blog-home' %}">Home</a>
+            {% if user.is_authenticated %}
+              {% url 'blog-home' as home_url %}
+            {% else %}
+              {% url 'landing-page' as home_url %}
+            {% endif %}
+           <a class="btn nav-btn-golden mx-1" href="{{ home_url }}">Home</a>
           <a class="btn nav-btn-golden mx-1" href="{% url 'blog-about' %}">About</a>
           </div>
           <!-- Navbar Right Side -->
@@ -73,9 +81,33 @@
         </div>
       </div>
     </nav>
+    
+
   </header>
+
+ 
+
+   
   <main role="main">
   {% block main_layout %}
+
+  {% if user.is_authenticated %}
+    <div class="hero-banner">
+  <div class="hero-overlay-text">
+    <div class="hero-left">
+      <h1>Welcome to PyWithRaman Blog</h1>
+    </div>
+    <div class="hero-right">
+      <img  alt="Profile" class="profile-img" src="{{ user.profile.image.url }}">
+      <p class="username">{{ user.username }}</p>
+    </div>
+  </div>
+</div>
+{% endif %}
+  
+
+
+
   <div class="container">
     <div class="row">
       <div class="col-md-8">
@@ -93,6 +125,8 @@
       {% endblock %}
     </div>
   </div>
+  
+
   {% endblock %}
 </main>
 

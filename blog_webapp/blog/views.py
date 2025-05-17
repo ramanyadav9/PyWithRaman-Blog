@@ -10,6 +10,24 @@ from django.views.generic import (
     DeleteView
 )
 from .models import Post
+from django.db.models import Q
+
+def search_view(request):
+    query = request.GET.get('q')
+    results = []
+
+    if query:
+        results = Post.objects.filter(
+            Q(title__icontains=query) |
+            Q(content__icontains=query)
+        ).order_by('-date_posted')
+
+    context = {
+        'query': query,
+        'results': results,
+    }
+    return render(request, 'blog/search_results.html', context)
+
 
 
 def landing_page(request):

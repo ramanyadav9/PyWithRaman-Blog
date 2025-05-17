@@ -1,7 +1,13 @@
 {% extends "blog/base.html" %}
+ {%load static%}
+
 {% block content %}
-    <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
-    {% for post in posts %}
+<div class="container mt-4">
+    <h2>Search Results for "{{ query }}"</h2>
+    <hr>
+
+    {% if results %}
+        {% for post in results %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
           <div class="media-body">
@@ -10,11 +16,17 @@
               <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
             </div>
             <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-           <p class="article-content">{{ post.content|truncatewords:20 }}</p>
+            <p class="article-content">{{ post.content|truncatewords:20 }}</p>
             <a href="{% url 'post-detail' post.id %}" class="btn btn-outline-dark btn-sm">Read More</a>
           </div>
         </article>
-    {% endfor %}
-    {% include 'blog/pagination.html' %}
+        {% endfor %}
+    {% else %}
+        <p>No posts found.</p>
+    {% endif %}
+</div>
+{% include 'blog/pagination.html' %}
+{% endblock %}
 
-{% endblock content %}
+
+
