@@ -67,48 +67,41 @@ ul {
 }
 
 .hero-banner {
-  position: relative;
-
  
-  margin-bottom: 20px; /* If navbar is fixed */
-  display: flex;
-  padding: 2rem 3rem;
+  padding: 40px 30px;
+  border-radius: 12px;
   color: #fff;
-  background-color: #FFDBDB;/* Fallback */
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
 }
 
 .hero-overlay-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  max-width: 800px;
   width: 100%;
-}
-
-.hero-left h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #965959; /* Theme accent */
-}
-
-.hero-right {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
+  align-items: left;
 }
 
-.profile-img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #916d6d;
+.hero-left {
+  text-align: left;
 }
 
-.username {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #bb5b5b;
+#random-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 350;
+  line-height: 1.4;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
 }
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect 
 from django.contrib.auth.models import User
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import (
@@ -11,7 +11,16 @@ from django.views.generic import (
 )
 from .models import Post
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
+from django.core.mail import send_mail
+from django.contrib import messages
+from django.conf import settings
+
+
+
+
+@login_required
 def search_view(request):
     query = request.GET.get('q')
     results = []
@@ -31,16 +40,31 @@ def search_view(request):
 
 
 def landing_page(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        # Compose the message
+        email_body = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
+
+        # Send the email
+        send_mail(
+            subject='New Contact Form Submission - PyWithRaman',
+            message=email_body,
+            from_email=settings.EMAIL_HOST_USER,
+            recipient_list=['dak99ine@gmail.com'],  # Replace with your personal email
+            fail_silently=False,
+        )
+
+        messages.success(request, 'Thanks! Your message has been sent.')
+        return redirect('landing-page')  
+
     recent_posts = Post.objects.order_by('-date_posted')[:6]
     return render(request, 'blog/landing.html', {'recent_posts': recent_posts})
 
 
-# # In views.py
-# context = {
-#   'total_users': User.objects.count(),
-#   'total_posts': Post.objects.count(),
-#   'featured_posts': Post.objects.order_by('-date_posted')[:6],
-# }
+
 
 
 
@@ -109,6 +133,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
+
 
 
 def about(request):

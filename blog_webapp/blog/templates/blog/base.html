@@ -95,14 +95,28 @@
     <div class="hero-banner">
   <div class="hero-overlay-text">
     <div class="hero-left">
-      <h1>Welcome to PyWithRaman Blog</h1>
-    </div>
-    <div class="hero-right">
-      <img  alt="Profile" class="profile-img" src="{{ user.profile.image.url }}">
-      <p class="username">{{ user.username }}</p>
+      <h1 id="random-quote">Loading quote...</h1>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const quoteElement = document.getElementById('random-quote');
+
+    fetch('https://dummyjson.com/quotes/random')
+      .then(res => res.json())
+      .then(data => {
+        // The API returns an object with 'quote' and 'author'
+        quoteElement.textContent = `"${data.quote}" — ${data.author}`;
+      })
+      .catch(error => {
+        console.error('Error fetching quote:', error);
+        quoteElement.textContent = 'Welcome to PyWithRaman Blog';
+      });
+  });
+</script>
+
 {% endif %}
   
 

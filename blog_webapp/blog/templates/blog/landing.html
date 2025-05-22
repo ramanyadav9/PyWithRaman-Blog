@@ -63,20 +63,22 @@
             {% csrf_token %}
             <div class="form-group">
               <label class="contact_sub_title" for="name">Name</label>
-              <input placeholder="Enter your full name" class="form-control form_style" type="text" id="name" required>
+              <input placeholder="Enter your full name" class="form-control form_style" type="text" id="name" name='name' required>
             </div>
             <div class="form-group">
               <label class="contact_sub_title" for="email">Email</label>
-              <input placeholder="Enter your email" id="email" class="form-control form_style" type="email" required>
+              <input placeholder="Enter your email" id="email" class="form-control form_style" type="email" name='email' required>
             </div>
             <div class="form-group">
               <label class="contact_sub_title" for="message">Message</label>
-              <textarea placeholder="Enter your message" id="message" rows="5" class="form-control form_style" required></textarea>
+              <textarea placeholder="Enter your message" id="message" rows="5" class="form-control form_style" name='message' required></textarea>
             </div>
             <button type="submit" class="btn btn-outline-dark mt-2">SEND</button>
           </form>
         </div>
       </div>
+
+
 
       <!-- About Card -->
       <div class="col-md-6 mb-4">
@@ -103,9 +105,9 @@
     <div class="container">
       <p class="mb-1">&copy; 2025 PyWithRaman. All rights reserved.</p>
       <div>
-        <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/ramanyadav9" class="text-white mx-2"><i class="fab fa-github"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/raman-yadav-368518257/" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
