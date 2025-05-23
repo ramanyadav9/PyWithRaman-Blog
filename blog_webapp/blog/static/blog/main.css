@@ -271,3 +271,38 @@ ul {
 
 
 
+
+
+
+.article-content {
+  font-size: 1rem;
+  color: #594100;
+  line-height: 1.6;
+  max-height: 160px;            /* Limit height to keep layout tight */
+  overflow: hidden;             /* Hide overflow */
+  text-overflow: ellipsis;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.article-content p,
+.article-content div,
+.article-content span,
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.article-content img,
+.article-content table,
+.article-content iframe {
+  max-width: 100%;
+  height: auto;
+  display: none; /* Hide media from preview */
+}
