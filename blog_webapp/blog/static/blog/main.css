@@ -208,9 +208,9 @@ ul {
 
 
 .editor-wrapper {
-  background-color: #FFDBDB; /* soft pink */
+  background-color: #eeeeee; /* soft pink */
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: none;
   margin-bottom: 2rem;
 }
@@ -223,8 +223,8 @@ ul {
 .editor-wrapper textarea,
 .editor-wrapper input[type="url"],
 .editor-wrapper select {
-  background-color: #FFC6C6;
-  color: #644A07;
+  background-color: #f7f2f2;
+  color: #000000;
   border: none;
   border-radius: 8px;
   padding: 0.8rem 1rem;
@@ -235,19 +235,19 @@ ul {
 
 .editor-wrapper input[type="text"]::placeholder,
 .editor-wrapper textarea::placeholder {
-  color: #A87A7A;
+  color: #fde5e5;
 }
 
 .editor-wrapper input[type="text"]:focus,
 .editor-wrapper textarea:focus {
   outline: none;
-  background-color: #FFDBDB;
+  background-color: #fbf4f4;
   box-shadow: 0 0 0 2px #644A07;
 }
 
 .editor-wrapper legend {
   font-size: 1.5rem;
-  color: #644A07;
+  color: #efede6;
   border-bottom: none;
   margin-bottom: 1.5rem;
   font-weight: 600;

@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ckeditor',
     'users.apps.UsersConfig',
     "crispy_forms",
     "crispy_bootstrap5",

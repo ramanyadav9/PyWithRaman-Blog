@@ -24,7 +24,7 @@
           <div class="card post-card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">{{ post.title }}</h5>
-              <p class="card-text text-muted">{{ post.content|truncatewords:25 }}</p>
+              <p class="card-text text-muted">{{ post.content|truncatewords:25|safe  }}</p>
               <a href="{% url 'post-detail' post.id %}" class="btn btn-sm btn-outline-dark">Read More</a>
             </div>
           </div>

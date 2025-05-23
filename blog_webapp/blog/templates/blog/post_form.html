@@ -7,6 +7,7 @@
       {% csrf_token %}
       <div class="editor-fields">
         {{ form|crispy }}
+        {{ form.media }}
       </div>
       <div class="form-group mt-3">
         <button class="btn post-btn" type="submit">Publish</button>
